@@ -1,8 +1,9 @@
+@import './base/normalise';
+@import './base/variables';
 @import './base/common';
 @import './base/container';
-@import './base/normalise';
 @import './components/button';
-@import './components/hamburger';
 @import './components/header';
+@import './components/home';
 @import './components/modal';
 @import './components/footer';
