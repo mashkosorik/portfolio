@@ -17,9 +17,13 @@
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
-
 .logo-wrapper {
   width: 200px;
+}
+@media screen and (min-width: 300px) {
+  .logo-wrapper {
+    width: 120px;
+  }
 }
 
 /*===== NAV =====*/
@@ -80,10 +84,39 @@
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
 }
 
 /*=== Show menu ===*/
 .show {
   right: 0;
+}
+.nav__list {
+  & a:hover {
+    color: var(--first-color);
+  }
+
+  & a:active {
+    color: rgb(248, 75, 211);
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+    &__list {
+      display: flex;
+      padding-top: 0;
+    }
+    &__item {
+      margin-left: var(--mb-6);
+      margin-bottom: 0;
+    }
+    &__toggle {
+      display: none;
+    }
+    &__link {
+      color: var(--second-color);
+    }
+  }
 }

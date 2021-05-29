@@ -13,3 +13,9 @@ img {
   height: auto;
   display: block; // borra los espacios en blanco
 }
+
+@media screen and(min-width: 768px) {
+  body {
+    margin: 0;
+  }
+}

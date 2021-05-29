@@ -12,11 +12,10 @@
     <title>MS studio</title>
   </head>
   <body>
-    <!--===== HEADER =====-->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div class="logo-wrapper">
-          <img src="./images/MSstudio.jpeg" alt="logo" />
+          <p class="accent">MS studio</p>
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -40,19 +39,18 @@
     </header>
 
     <main class="l-main">
-      <!--===== HOME =====-->
       <section class="home bd-grid" id="home">
         <div class="home__data">
           <h1 class="home__title">
             Привет,
             <br />
             Я
-            <span class="home__title-color">Маша</span>
+            <span class="home__title-color accent">Маша</span>
             <br />
             веб-разработчик
           </h1>
 
-          <a href="#" class="button">Contact</a>
+          <a href="tel:+380987213302" class="button">Contact</a>
         </div>
 
         <div class="home__social">
@@ -78,17 +76,15 @@
         </div>
       </section>
 
-      <!--===== ABOUT =====-->
       <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title accent">About</h2>
 
         <div class="about__container bd-grid">
           <div class="about__img">
             <img src="./images/ms_for_home.jpeg" alt="img" />
           </div>
 
-          <div>
-            <h2 class="about__subtitle">Я Маша</h2>
+          <div class="about__texts">
             <p class="about__text">
               Привет! Я Маша, мне 12 лет. Я ещё учусь, но уже многое умею!
               Также, я верстаю сайты и планирую стать крутым фронтенд
@@ -98,35 +94,29 @@
         </div>
       </section>
 
-      <!--===== WORK =====-->
       <section class="work section" id="work">
-        <h2 class="section-title">Work</h2>
-
+        <h2 class="section-title accent">Work</h2>
         <div class="work__container bd-grid">
-          <div class="work__img">
-            <img src="assets/img/work1.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work2.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work3.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work4.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work5.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="assets/img/work6.jpg" alt="" />
-          </div>
+          <ul class="work__container bd-grid">
+            <li class="work__img">
+              <a class="accent" href="https://mashkosorik.github.io/lesson-1/">
+                portal
+              </a>
+              <img src="./images/lesson1.png" alt="" />
+            </li>
+            <li class="work__img">
+              <a class="accent" href="https://mashkosorik.github.io/lesson-2/">
+                bonfire
+              </a>
+              <img src="./images/lesson2.png" alt="" />
+            </li>
+          </ul>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p class="footer__title">Sandra</p>
+      <p class="footer__title accent">MS studio</p>
       <div class="footer__social">
         <a
           href="https://www.facebook.com/maria.soroka.399/"
@@ -134,21 +124,11 @@
         >
           <i class="bx bxl-facebook"></i>
         </a>
-        <a
-          href="https://www.instagram.com/sandrahrevtsova/"
-          class="footer__icon"
-        >
-          <i class="bx bxl-instagram"></i>
-        </a>
-        <!-- <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a> -->
       </div>
       <p>&#169; 2021 copyright all right reserved</p>
     </footer>
 
-    <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
